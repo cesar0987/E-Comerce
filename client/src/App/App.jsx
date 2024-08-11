@@ -1,11 +1,15 @@
+import { ProductDetail } from "../pages";
 import "./App.css";
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <>
-      <h1>HOLA</h1>
-    </>
+    <div>
+      <Routes>
+        <Route path="/productdetails" element={<ProductDetail />} />
+      </Routes>
+    </div>
   );
 }
 
-export default App;
+export default App
